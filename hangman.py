@@ -6,7 +6,6 @@ of guesses (a counter variable is needed for limiting the guesses). This is one 
 interesting python projects to begin with. 
 
 Remember, you must create a file '.txt' in which to put the names to choose from
-
 '''
 
 import random
