@@ -4,6 +4,9 @@ this project are variables, random, integer, strings, char, input and output, an
 In the game, users have to enter letter guesses, and each user will have a limited number 
 of guesses (a counter variable is needed for limiting the guesses). This is one of the 
 interesting python projects to begin with. 
+
+Remember, you must create a file '.txt' in which to put the names to choose from
+
 '''
 
 import random
