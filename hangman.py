@@ -1,19 +1,19 @@
 '''
-This is more of a “guess the word” game. The core concepts you have to use while developing
-this project are variables, random, integer, strings, char, input and output, and boolean.
-In the game, users have to enter letter guesses, and each user will have a limited number
-of guesses (a counter variable is needed for limiting the guesses). This is one of the
-interesting python projects to begin with.
+This is more of a “guess the word” game. The core concepts you have to use while developing 
+this project are variables, random, integer, strings, char, input and output, and boolean. 
+In the game, users have to enter letter guesses, and each user will have a limited number 
+of guesses (a counter variable is needed for limiting the guesses). This is one of the 
+interesting python projects to begin with. 
 '''
 
 import random
 
-with open('wordlist.txt', 'r') as f:
-    words = f.readlines()
-word = random.choice(words)[:-1]
-
 def paly():
 
+    with open('wordlist.txt', 'r') as f:
+      words = f.readlines()
+    word = random.choice(words)[:-1]
+    
     allowed_errors = len(word)
     guess = []
     done = False
@@ -48,11 +48,11 @@ def paly():
                 done = False
 
     if done:
-        print("Super 🙂")
+        print("\nSuper 🙂")
         print(f"Yay, Congrats. you found the word it was '{word}' .")
 
     else:
-        print("Sorry ☹")
+        print("\nSorry ☹")
         print(f"Game over! the word it was '{word}' !")
 
 paly()
@@ -62,9 +62,9 @@ while answer == 'y':
     paly()
     answer = input("\nDo you want to play again? [y/n] > ").lower()
 if answer == 'n':
-    print("The programm will me closed...")
+    print("\nThe programm will me closed...")
 else:
-    print("invalid input !")
+    print("\ninvalid input !")
     print("The programm will me closed...")
 
 
