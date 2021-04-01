@@ -1,3 +1,9 @@
+'''
+If you are tired of having no playmate, then a 5-minute stint of rock, paper, scissors with the computer and designed by you, yourself will improve your mood.
+
+We again use the random function here. You make a move first and then the program makes one. To indicate the move, you can either use a single alphabet or input
+an entire string. A function will have to be set up to check the validity of the move.
+'''
 import random
 
 print("Welcome to my game 👋")
